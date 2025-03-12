@@ -75,9 +75,9 @@ with sync_playwright() as p:
 
 # Proxy listesini dosyaya kaydet
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-with open(os.path.join(OUTPUT_DIR, "all_proxies.txt"), "w", encoding="utf-8") as f:
+with open(os.path.join(OUTPUT_DIR, "randomproxyler.txt"), "w", encoding="utf-8") as f:
     f.write("\n".join(all_proxies))
-with open(os.path.join(OUTPUT_DIR, "us_proxies.txt"), "w", encoding="utf-8") as f:
+with open(os.path.join(OUTPUT_DIR, "us_proxyler.txt"), "w", encoding="utf-8") as f:
     f.write("\n".join(us_proxies))
 
 print(f"✅ {len(all_proxies)} adet proxy kaydedildi.")
